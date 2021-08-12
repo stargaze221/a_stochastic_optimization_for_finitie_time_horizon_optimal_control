@@ -8,8 +8,9 @@ Around 2019, Professor Theodorou visited our labe and presented his work on the 
 
 2. Williams G, Drews P, Goldfain B, Rehg JM, Theodorou EA. Aggressive driving with model predictive path integral control. In2016 IEEE International Conference on Robotics and Automation (ICRA) 2016 May 16 (pp. 1433-1440). IEEE.
 
-The Pseudo code of an implementaion of the MPPI is as below
-![Sim01](Algorithm.png)
+The Pseudo code of an implementaion of the MPPI is as below.
+
+![Algorithm](Algorithm.PNG)
 
 I implemented the algorithm above with the following simple linear and nonlinear dynamic model. I noted that the sample-based optimization works better with simple dynamics. Especially with the simple car model, the constraint seems to affect its performance. If you increase the time horizon, the performance will quickly degrade. Currently, I am doing some research on the sample complexity of the MPPI based on previous works on stochastic programming. 
 
