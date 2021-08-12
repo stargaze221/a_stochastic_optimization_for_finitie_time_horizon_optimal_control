@@ -15,30 +15,6 @@ The Pseudo code of an implementaion of the MPPI is as below.
 I implemented the algorithm above with the following simple linear and nonlinear dynamic model. I noted that the sample-based optimization works better with simple dynamics. Especially with the simple car model, the constraint seems to affect its performance. If you increase the time horizon, the performance will quickly degrade. Currently, I am doing some research on the sample complexity of the MPPI based on previous works on stochastic programming. 
 
 ## Sim 01: Double Integrator
-We consider the double integrator as a model for UAV flight path simulation model as below.
-
-The system dynamics 
-\begin{equation}
-x_{t+1} = A x_t + B u_t, \quad x_0 = [0 ,0, 0, 0]^\top,
-\end{equation}
-where
-\begin{equation}
-A = \begin{bmatrix}
-     1 & 0 & 0.1 & 0   \\
-     0 & 1 &  0 & 0.1 \\
-     0 & 0 &  1 & 0   \\
-     0 & 0 &  0 & 1
-     \end{bmatrix}
-\quad
-B = \begin{bmatrix}
-     0  & 0  \\
-     0  & 0  \\
-     0.1 & 0  \\
-     0  & 0.1
-     \end{bmatrix}
-\end{equation} 
-
-
 ![Sim01](figures/example1.png)
 
 The code is linked at [here](Example1.ipynb).
