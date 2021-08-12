@@ -23,3 +23,5 @@ The code is linked at [here](Example1.ipynb).
 ![Sim02](figures/example2.png)
 
 The code is linked at [here](Example2.ipynb).
+
+## To run the code in the Jupyternotebook. You need basic Python packages including NumPy and Pytorch. And GPU is necessary to dealing the heavy random sampling.
